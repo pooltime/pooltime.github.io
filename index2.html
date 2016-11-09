@@ -4,17 +4,7 @@
 <head>
     <script src="./js/kps.CustomSchemeManager.js"></script>
 	<script type="text/javascript">
-	var ready = function ( callMyScheme ) {
-	if ( typeof callMyScheme !== 'function' ) return;
-	if ( document.readyState === 'complete'  ) {
-    return callMyScheme();
-	}
-
-	document.addEventListener( 'interactive', callMyScheme, false );
-	};
-ready(function() {
-});
-	//window.onload = callMyScheme;
+	window.onload = callMyScheme;
 		function callMyScheme() {
 			// Create CustomSchemeManager Class
 			var csm = new CustomSchemeManager();
